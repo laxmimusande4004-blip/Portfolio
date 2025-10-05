@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Coffee - Order Now</title>
+    <link rel="stylesheet" href="order.css"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="order-header">
+        <h1 class="logo">COSMIC COFFEE</h1>
+        <a href="index.html" class="back-link"><i class="fas fa-chevron-left"></i> Back to Home</a>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">2</span>
+        </div>
+    </header>
+
+    <div class="main-order-container section-container">
+        
+        <div class="menu-display">
+            <h2>Coffee & Blends</h2>
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <img src="blend.jpg" alt="Cosmic Coffee Blend Bag">
+                    <div class="card-info">
+                        <h4>🚀 Stellar Dark Roast (12oz)</h4>
+                        <p class="description">Our signature, intense dark roast. Notes of cacao and dark matter.</p>
+                        <p class="price">$14.99</p>
+                        <button class="add-to-cart-btn"><i class="fas fa-plus-circle"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="nitro.jpg" alt="Nitro Cold Brew Can">
+                    <div class="card-info">
+                        <h4>❄️ Nebula Nitro Cans (4-Pack)</h4>
+                        <p class="description">Ready-to-drink nitrogen-infused cold brew. Smooth and powerful.</p>
+                        <p class="price">$18.00</p>
+                        <button class="add-to-cart-btn"><i class="fas fa-plus-circle"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="mug.jpg" alt="Cosmic Coffee Mug">
+                    <div class="card-info">
+                        <h4>🪐 Comet Mug</h4>
+                        <p class="description">Limited edition ceramic mug, perfect for your stellar brew.</p>
+                        <p class="price">$12.50</p>
+                        <button class="add-to-cart-btn"><i class="fas fa-plus-circle"></i> Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="pods.jpg" alt="Espresso Pods">
+                    <div class="card-info">
+                        <h4>⚫ Black Hole Pods (10 Count)</h4>
+                        <p class="description">Intense espresso pods, Nespresso compatible.</p>
+                        <p class="price">$9.99</p>
+                        <button class="add-to-cart-btn"><i class="fas fa-plus-circle"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout-summary">
+            <h3>🛒 Your Cart (The Payload)</h3>
+
+            <div class="cart-items-list">
+                <div class="cart-item">
+                    <span class="item-name">Stellar Dark Roast</span>
+                    <div class="item-controls">
+                        <span class="item-qty">x 1</span>
+                        <span class="item-price">$14.99</span>
+                        <button class="remove-btn"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <span class="item-name">Nebula Nitro Cans</span>
+                    <div class="item-controls">
+                        <span class="item-qty">x 1</span>
+                        <span class="item-price">$18.00</span>
+                        <button class="remove-btn"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-totals">
+                <div class="total-line">
+                    <span>Subtotal:</span>
+                    <span>$32.99</span>
+                </div>
+                <div class="total-line">
+                    <span>Shipping:</span>
+                    <span>$5.00</span>
+                </div>
+                <div class="total-line grand-total">
+                    <h4>Total Due:</h4>
+                    <h4>$37.99</h4>
+                </div>
+            </div>
+            
+            <button class="checkout-btn">Proceed to Checkout</button>
+
+        </div>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Cosmic Coffee. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

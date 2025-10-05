@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(95, 25, 25, 0.8);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.main-header h1 {
+  font-size: 1.8rem;
+  animation: fadeInDown 1s ease;
+}
+
+nav a {
+  color: #9c9696;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffb84d;
+}
+
+.nav-cta {
+  background: #ffb84d;
+  color: #111;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-cta:hover {
+  background: #fff;
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(50%);
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 20px;
+  font-size: 20px;
+  animation: fadeInUp 1.5s ease;
+
+}
+
+.hero-content h2 {
+  font-size: 2.8rem;
+  font-size: 70px;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px #000;
+  
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  margin-bottom:25px;
+  opacity: 0.9;
+}
+
+.cta-button {
+  background: #ffb84d;
+  color: #111;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #fff;
+  transform: scale(1.1);
+}
+
+.section-container {
+  padding: 100px 60px;
+  text-align: center;
+  background: #111;
+  color: #eee;
+}
+
+.section-container h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ffb84d;
+  animation: fadeIn 1s ease;
+}
+
+.section-container p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  background: #1a1a1a;
+
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  background: #2d2222;
+}
+
+footer {
+  background: #1a1818;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatImage {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.feature-item {
+  background: #3e1c1c;
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.4s ease, background 0.4s ease;
+  animation: fadeInUp 1s ease;
+}
+
+.feature-item img {
+  height:90%;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 20px;
+  filter: brightness(0.9) saturate(1.1);
+}
+.feature-item-1 img {
+  height: 90%;
+  width:90%;
+  object-fit:cover;
+  border-radius: 20px;
+  filter: brightness(0.9) saturate(1.1);
+
+}
+.feature-item-1 {
+  background: #3e1c1c;
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.4s ease, background 0.4s ease;
+  animation: fadeInUp 1s ease;
+}
+.feature-item-2 img {
+  height: 90%;
+  width:90%;
+  object-fit:cover;
+  border-radius: 20px;
+  filter: brightness(0.9) saturate(1.1);
+
+}
+.feature-item-2 {
+  background: #3e1c1c;
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.4s ease, background 0.4s ease;
+  animation: fadeInUp 1s ease;
+}
+.hero {
+    position: relative;
+    height: 100vh; /* full screen height */
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    text-align: center;
+    color: white;
+    z-index: 1;
+    overflow: hidden; /* makes sure no overflow */
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translate(-50%, -50%); /* centers video */
+    object-fit: cover; /* covers full section */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;  /* keeps text above video */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}

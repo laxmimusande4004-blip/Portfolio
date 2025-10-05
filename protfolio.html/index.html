@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">☰</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="project.html">PROJECT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="quote-section">
+  
+    <div class="image">
+      <img src="image-2.jpg" alt="Instagram Preview">
+
+    </div>
+    <div class="quote">
+      <p>Hi! I'm Laxmi Musande</p>
+    </div>
+    <div class="insta-box">
+      <p>I’m currently building my skills through hands-on projects .This portfolio is a glimpse of my creative journey so far.</p>
+    </div>
+
+    <a href="contact.html" class="contact-btn">CONTACT WITH ME</a>
+  </section>
+   <script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll(".reveal");
+    for (let i = 0; i < reveals.length; i++) {
+      let windowHeight = window.innerHeight;
+      let elementTop = reveals[i].getBoundingClientRect().top;
+      let elementVisible = 100; 
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll(); 
+</script>
+</body>
+</html>
